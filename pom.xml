@@ -12,6 +12,7 @@
     <module>ruoyiBackup-framework</module>
     <module>ruoyiBackup-system</module>
     <module>ruoyiBackup-common</module>
+    <module>ruoyiBackup-quartz</module>
   </modules>
   <packaging>pom</packaging>
 
@@ -23,6 +24,8 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
+    <shiro.version>1.4.0</shiro.version>
+    <commons.io.version>2.5</commons.io.version>
   </properties>
 
   <dependencyManagement>
@@ -55,6 +58,12 @@
         <artifactId>ruoyiBackup-system</artifactId>
         <version>1.0-SNAPSHOT</version>
       </dependency>
+      <dependency>
+        <groupId>org.apache.shiro</groupId>
+        <artifactId>shiro-core</artifactId>
+        <version>${shiro.version}</version>
+      </dependency>
+
     </dependencies>
   </dependencyManagement>
 
